@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Naveen Gupta - Educator • AI Trainer • Innovator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0A3D91; /* Royal Blue */
+  --secondary:#1565C0; /* Deep Blue */
+  --accent:#4FC3F7; /* Sky Blue */
+  --cta:#00B8D4; /* Turquoise */
+  --bg:#F5FAFF; /* Very light blue */
+  --white:#FFFFFF;
+  --dark:#0F172A;
+  --muted:#E8F1FA;
+  --radius:12px;
+  --max-width:1200px;
+}
+body{
+  margin:0;
+  font-family:Inter, sans-serif;
+  background:var(--bg);
+  color:var(--dark);
+}
+header{
+  background:linear-gradient(135deg, var(--primary), var(--secondary));
+  color:white;
+  padding:20px 0;
+}
+.container{width:100%; max-width:var(--max-width); margin:auto; padding:0 20px;}
+nav{display:flex; justify-content:space-between; align-items:center;}
+nav a{color:white; margin-left:16px; font-weight:600; text-decoration:none;}
+nav a.cta{background:var(--cta); padding:10px 16px; border-radius:var(--radius);}
+
+/* HERO */
+.hero{display:grid; grid-template-columns:1fr 1fr; gap:40px; padding:60px 0; align-items:center;}
+.hero h1{font-size:38px; font-family:Poppins; color:white; margin:0 0 12px;}
+.hero p{color:#E0ECFF; line-height:1.7;}
+.hero .btns{margin-top:20px;}
+.hero .btns a{background:var(--cta); padding:12px 20px; border-radius:var(--radius); color:white; font-weight:700; margin-right:12px; text-decoration:none;}
+
+/* SLIDER */
+.slider{position:relative; border-radius:var(--radius); overflow:hidden; height:320px; background:#DCEBFA;}
+.slides{display:flex; transition:0.5s;}
+.slide{min-width:100%; display:flex; align-items:center; justify-content:center; color:#555; font-weight:700;}
+.slider button{position:absolute; top:50%; transform:translateY(-50%); background:white; border:0; padding:10px 14px; border-radius:50%; cursor:pointer;}
+#prev{left:10px;} #next{right:10px;}
+
+/* Sections */
+section{padding:60px 0;}
+h2{font-family:Poppins; font-size:28px; color:var(--primary); margin-bottom:20px;}
+.card{background:white; padding:20px; border-radius:var(--radius); box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+.item{background:white; padding:16px; border-radius:var(--radius); box-shadow:0 4px 14px rgba(0,0,0,0.04);} 
+
+/* Gallery */
+.gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+.gallery div{background:var(--muted); height:150px; border-radius:var(--radius); display:flex; justify-content:center; align-items:center; color:#555;}
+
+/* Contact */
+form input, form textarea, form select{
+  width:100%; padding:10px; border-radius:var(--radius); border:1px solid #ddd; margin-bottom:12px;
+}
+form button{background:var(--primary); color:white; border:0; padding:12px; border-radius:var(--radius); font-weight:700; cursor:pointer;}
+
+footer{background:var(--primary); color:white; padding:20px 0; margin-top:40px;}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div style="font-family:Poppins; font-size:20px; font-weight:700;">Dr. Naveen Gupta</div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#activities">Activities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="cta">Invite Me</a>
+      </div>
+    </nav>
+
+    <div class="hero" id="home">
+      <div>
+        <h1>Empowering Students & Teachers with AI, Digital Skills & Innovation</h1>
+        <p>National ICT Awardee • Delhi State Teachers Award • AI & Python Trainer • CBSE Resource Person • Tech Fest Convenor.</p>
+        <div class="btns">
+          <a href="#contact">Book a Session</a>
+          <a href="#workshops" style="background:var(--accent); color:var(--dark);">Explore Workshops</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="slider" id="slider">
+          <div class="slides" id="slides">
+            <div class="slide">HERO PHOTO 1</div>
+            <div class="slide">HERO PHOTO 2</div>
+            <div class="slide">HERO PHOTO 3</div>
+          </div>
+          <button id="prev">❮</button>
+          <button id="next">❯</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+<section id="about">
+  <h2>About Me</h2>
+  <div class="grid">
+    <div class="item">Award-winning educator with expertise in AI, digital pedagogy, and CBSE curriculum design.</div>
+    <div class="item">Trainer for teachers, students, principals, and academic leaders across India.</div>
+    <div class="item">Founder of National Award for Teachers Forum & Convenor of Geek-a-Hertz Tech Fest.</div>
+  </div>
+</section>
+
+<section id="workshops">
+  <h2>Workshops & Training</h2>
+  <div class="grid">
+    <div class="item"><h3>AI in Education</h3><p>Responsible use of AI tools for teaching.</p></div>
+    <div class="item"><h3>Cyber Safety</h3><p>Digital citizenship & online security.</p></div>
+    <div class="item"><h3>Python & Coding</h3><p>Python, C++, Java, SQL, Networking.</p></div>
+  </div>
+</section>
+
+<section id="workshops">
+  <h2>Workshops & Detailed Programs</h2>
+  <p>Below are the signature workshops, bespoke programs and expert sessions offered by Dr. Naveen Gupta. Each program can be customised in duration (90 min / half day / full day / multi-day) and audience (teachers, students, school leaders, COEs, universities).</p>
+  <div class="card">
+    <h3>Comprehensive Workshop Catalog</h3>
+    <div style="margin-top:12px">
+      <h4>1. Use of AI for Educators</h4>
+      <p>Practical, classroom-ready AI for teachers: lesson planning with AI, AI-assisted assessments, personalised practice worksheets, AI ethics in schools, safe deployment strategies, and hands-on tool labs using ClassPoint, Magic School, Gamma, Fliki and Canva for Education. Outcomes: teachers design an AI-integrated lesson plan and create one personalised worksheet for their classroom.</p>
+
+      <h4>2. Cyber Safety & Security</h4>
+      <p>School-wide cyber safety strategy covering digital footprints, cyberbullying prevention, secure passwords & accounts, parental awareness sessions, incident reporting workflows, and establishing a Cyber Safety & Security Club. Outcomes: a school-ready cyber safety policy draft and classroom activities to teach digital responsibility.</p>
+
+      <h4>3. Digital Tools for 21st Century Skills</h4>
+      <p>Hands-on sessions on tools that amplify learning: collaborative platforms, formative assessment tools, interactive presentation tools, and digital portfolios. Focus on communication, collaboration, critical thinking and creativity (the 4Cs). Outcomes: teachers create a blended learning module applying at least two digital tools.</p>
+
+      <h4>4. Gamification & Game-Based Learning</h4>
+      <p>Designing learning experiences using gamified mechanics, badges, leaderboards, and game-based assessments. Practical activities using Quizizz, ClassPoint, and simple game-design using Scratch or Unity (intro). Outcomes: a gamified lesson plan and rubric for assessing game-based learning.</p>
+
+      <h4>5. Life Skills & SEL (Social Emotional Learning)</h4>
+>      <p>Integrated life-skills workshops focusing on communication, collaboration, problem-solving, resilience and decision-making. Activities for classroom practice, parent engagement ideas and assessment strategies for soft-skills. Outcomes: SEL activities mapped to grade levels and an evaluation checklist for teachers.</p>
+
+      <h4>6. National Education Policy (NEP) 2020 Implementation</h4>
+      <p>Practical support for schools to align curriculum, pedagogy and assessment with NEP 2020. Sessions include competency-based learning, multidisciplinary projects, experiential learning strategies, and assessment reform. Outcomes: a one-term implementation roadmap for NEP-aligned classroom practices.</p>
+
+      <h4>7. National Curriculum Framework — Secondary Education</h4>
+      <p>Workshops tailored to secondary school teachers on implementing the National Curriculum Framework (NCF) at the classroom level: curriculum mapping, competency frameworks, learning outcomes and classroom resources. Outcomes: mapped curriculum units and sample lesson sequences.</p>
+
+      <h4>8. Coding & Computer Science Track</h4>
+      <p>Progressive coding programs from foundational to advanced: Python for classrooms (visualisation + problem solving), C++ & Java fundamentals for senior students, Database fundamentals (SQL) and Networking basics. Includes pedagogy for teaching programming, assessment strategies and sample projects. Outcomes: course outline for term-wise coding curriculum and sample lab assignments.</p>
+
+      <h4>9. Expert Sessions for Class 12 — Board Exam Preparation</h4>
+      <p>Focused revision sessions for CBSE Class 12 (CS/IP/AI): exam pattern breakdown, important topics, sample solved answers, time-management strategies, and mock practice sessions. Outcomes: concise revision notes and mock test paper with marking scheme.</p>
+
+      <h4>10. Student Competitions & Events (Geek-a-Hertz)</h4>
+      <p>Design, organise and mentor tech fests and competitions: app development, robotics (Battle Botz), game design, movie making, e-waste innovation, B-plan with technology and more. Outcomes: event blueprints, rubrics and volunteer training plans.</p>
+
+      <h4>11. Teacher Professional Development & Leadership</h4>
+      <p>Training-of-Trainers (ToT) programs, leadership workshops for school heads, and peer-mentoring program design. Outcomes: ToT certificate program structure and facilitator guides.</p>
+
+      <h4>12. Parivartan — Community Digital Literacy</h4>
+      <p>Programs to teach parents and communities basic digital skills to support student learning: device use, school portals, and simple digital safety. Outcomes: parent training modules and take-home resource packs.</p>
+
+      <h4>13. Assessment & Feedback Innovations</h4>
+      <p>Strategies for formative assessment, rubrics for project work, AI-assisted grading workflows and feedback loops that support growth mindset. Outcomes: sample rubrics and an implementation checklist.</p>
+
+      <h4>14. Custom Consultancy & School Transformation</h4>
+      <p>End-to-end consultancy for digital transformation—policy, teacher training, infrastructure assessment, community engagement and monitoring. Outcomes: school transformation roadmap and KPIs.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:30px">Detailed Profile & Brand Overview</h2>
+  <div class="card">
+    <h3>Dr. Naveen Gupta — Professional Profile</h3>
+    <p><strong>Role:</strong> PGT Computer Science, Mentor for classes 6–12, Founder – National Award for Teachers Forum.</p>
+    <p><strong>Recognitions:</strong> National ICT Award, Delhi State Teachers Award 2024, Vivekananda Adipah Samman 2024, Brand Ambassador for ClassPoint (India).</p>
+    <p><strong>Expertise Areas:</strong> AI in Education, teacher training, curriculum development, coding education, cyber safety, gamification, robotics, event design & management.</p>
+    <p><strong>Collaborations & Experience:</strong> NIIT University, PIET, Bennett University, UPES, SGT University, Pearl Academy; contributor to NIOS curriculum development; led workshops for CBSE COEs and Sahodaya groups; convenor of Geek-a-Hertz.</p>
+    <p><strong>Signature Projects:</strong> Geek-a-Hertz tech fest; Parivartan parent-digital-literacy; Cyber Safety & Security Club; AI-powered personalised worksheets; low-cost teaching-learning materials for classrooms.</p>
+    <p><strong>Services Offered:</strong> Workshops, Consultant projects, Event design, ToT programs, Board exam coaching, Curriculum mapping, Parental training, Digital policy drafting.</p>
+    <p><strong>Brand Promise:</strong> Transform classrooms through practical, scalable and ethical use of technology — empowering teachers and students to thrive in a future shaped by AI.</p>
+  </div>
+
+  <section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <div>Image 1</div>
+    <div>Image 2</div>
+    <div>Image 3</div>
+    <div>Image 4</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr;">
+    <div class="card">
+      <p><strong>Email:</strong> info@naveengupta.net</p>
+      <p><strong>Phone:</strong> +91 9971999404</p>
+      <p><strong>Social:</strong> LinkedIn • YouTube • Instagram</p>
+    </div>
+
+    <form class="card">
+      <input placeholder="Name" required />
+      <input placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button>Send</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2025 NaveenGupta.net</div>
+</footer>
+
+<script>
+// Slider
+let index=0;
+const slides=document.getElementById("slides").children;
+function showSlide(){document.getElementById("slides").style.transform=`translateX(-${index*100}%)`;}
+document.getElementById("next").onclick=()=>{index=(index+1)%slides.length; showSlide();};
+document.getElementById("prev").onclick=()=>{index=(index-1+slides.length)%slides.length; showSlide();};
+
+// Quiz Logic
+let questions=[];
+function refreshList(){const q=document.getElementById('quizList'); if(!questions.length) q.innerHTML='No questions yet.'; else q.innerHTML=questions.map((x,i)=>`<div>${i+1}. ${x.q}</div>`).join('');}
+document.getElementById('addQ').onclick=()=>{
+  const q=document.getElementById('qText').value;
+  const opts=[opt1.value,opt2.value,opt3.value,opt4.value];
+  const correct=parseInt(document.getElementById('correct').value);
+  if(!q||!opts[0]||!opts[1]) return alert("Enter question + at least 2 options");
+  questions.push({q,opts,correct});
+  qText.value=opt1.value=opt2.value=opt3.value=opt4.value="";
+  refreshList();
+};
+let qi=0;
+function loadQ(){
+  const q=questions[qi];
+  document.getElementById('quizQuestion').innerText=q.q;
+  document.getElementById('quizOptions').innerHTML=q.opts.map((o,i)=>`<button style='display:block;margin-top:6px;width:100%;padding:8px;border-radius:var(--radius);'>${o}</button>`).join('');
+}
+document.getElementById('startQuiz').onclick=()=>{
+  if(!questions.length) return alert("Add questions first");
+  qi=0;
+  document.getElementById('quizModal').style.display='block';
+  loadQ();
+};
+document.getElementById('nextQ').onclick=()=>{
+  qi++;
+  if(qi>=questions.length){document.getElementById('quizQuestion').innerText='Quiz Completed'; document.getElementById('quizOptions').innerHTML=''; return;}
+  loadQ();
+};
+document.getElementById('closeQuiz').onclick=()=>{document.getElementById('quizModal').style.display='none';};
+</script>
+</body>
+</html>
